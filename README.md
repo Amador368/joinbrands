@@ -1,4 +1,7 @@
-# joinbrands
+# joinbrands test
+LinkedIn Profile: [Amador Santiago](https://www.linkedin.com/in/amadorsantiago/).
+GitHub Account Profile: [Amador368](https://github.com/Amador368).
+Any Website Url: [Pilotea](https://www.pilotea.mx/).
 
 ## Project setup
 ```

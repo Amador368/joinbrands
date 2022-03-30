@@ -1,7 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-/*import SignInView from '../views/SignInView.vue'
-import SignUpView from '../views/SignUpView.vue'*/
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,13 +15,23 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/sign-up',
     name: 'signup',
-    component: () => import(/* webpackChunkName: "about" */ '../views/SignUpView.vue')
+    component: () => import(/* webpackChunkName: "signup" */ '../views/SignUpView.vue')
   },
   {
     path: '/sign-in',
     name: 'signin',
-    component: () => import(/* webpackChunkName: "about" */ '../views/SignInView.vue')
-  }  
+    component: () => import(/* webpackChunkName: "signin" */ '../views/SignInView.vue')
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: () => import(/* webpackChunkName: "profile" */ '../views/ProfileView.vue')
+  },
+  {
+    path: '/lost-password',
+    name: 'lostpassword',
+    component: () => import(/* webpackChunkName: "lostpassword" */ '../views/LostPasswordView.vue')
+  }    
 ]
 
 const router = createRouter({
