@@ -1,9 +1,5 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <HomeView/>
 </template>
 
 <style>
@@ -28,3 +24,14 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script lang="ts">
+import { defineComponent } from 'vue';
+import HomeView from '@/views/HomeView.vue'; // @ is an alias to /src
+
+export default defineComponent({
+  name: 'HomeView',
+  components: {
+    HomeView,
+  },
+});
+</script>
